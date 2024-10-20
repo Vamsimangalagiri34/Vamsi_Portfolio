@@ -154,49 +154,59 @@ section {
     max-width: 800px;
 }
 
+/* Projects Section */
 #projects {
-    background-color: #f4f4f4; /* Light background for clarity */
-    padding: 60px 20px;
+    padding: 20px;
 }
 
 #projects h2 {
-    color: #2c3e50; /* Professional dark color */
-    font-size: 28px;
+    font-size: 2em; /* Larger font for headings */
+    text-align: center;
     margin-bottom: 20px;
 }
 
 #projects ul {
     list-style: none;
     padding: 0;
-    text-align: center;
 }
 
-#projects ul li {
-    background: #ffffff; /* White background for contrast */
-    margin: 10px auto;
-    padding: 20px; /* Padding for readability */
+#projects li {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #ddd; /* Add a light border for separation */
+    border-radius: 8px; /* Rounded corners */
+    background: #f9f9f9; /* Light background color */
     border-radius: 10px;
     border-left: 5px solid #f39c12; /* Orange border for emphasis */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Deeper shadow for depth */
-    max-width: 700px;
+    max-width: 900px;
     text-align: left;
-    transition: transform 0.3s; /* Scale effect on hover */
+    transition: transform 0.3s; /*
 }
 
-#projects ul li:hover {
-    transform: translateY(-5px); /* Lift effect on hover */
-}
-
-#projects ul li h3 {
-    color: #2980b9; /* Blue for project titles */
-    font-size: 24px;
+#projects h3 {
+    font-size: 1.5em; /* Responsive font size for project titles */
     margin-bottom: 10px;
 }
 
-#projects ul li p {
-    color: #333;
-    font-size: 16px;
-    line-height: 1.6;
+#projects p {
+    font-size: 1em; /* Base font size */
+    line-height: 1.5; /* Improved readability */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    #projects h2 {
+        font-size: 1.5em; /* Smaller font for smaller screens */
+    }
+
+    #projects h3 {
+        font-size: 1.2em; /* Smaller project title font */
+    }
+
+    #projects p {
+        font-size: 0.9em; /* Smaller text for paragraphs */
+    }
 }
 
 /* Skills Section */
@@ -473,7 +483,11 @@ p {
 footer {
     text-align: center;
     padding: 10px;
-    background: #333;
-    color: #fff;
+    background: #767373;
+    color: white;
+}
+
+footer p{
+    color: white;
 }
 
