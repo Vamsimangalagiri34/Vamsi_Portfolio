@@ -469,3 +469,11 @@ p {
         width: 90%; /* Wider items on smaller screens */
     }
 }
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+}
+
