@@ -53,34 +53,85 @@ body {
     line-height: 1.5; /* Increase line height for better spacing */
 }
 
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
 nav {
-    background: #333; 
-    color: #fff;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
+    background-color: #333; /* Background color of the navbar */
+    padding: 15px; /* Space inside the navbar */
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
+    list-style: none; /* Remove default list styles */
+    display: flex; /* Align items in a row */
+    justify-content: space-around; /* Distribute space evenly */
 }
 
 nav ul li {
-    margin: 0 20px;
+    margin: 0 10px; /* Space between items */
 }
 
 nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s; /* Color change on hover */
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px 15px; /* Space around text */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    border-radius: 5px; /* Rounded corners for hover effect */
 }
 
+/* Hover effect for links */
 nav ul li a:hover {
-    color: #f39c12; /* Orange color on hover */
+    background-color: #555; /* Change background on hover */
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+        display: none; /* Hide by default */
+    }
+    
+    nav ul.active {
+        display: flex; /* Show when active */
+    }
+
+    .menu-toggle {
+        display: flex; /* Show toggle button */
+    }
+}
+
+/* Hamburger Menu Styles */
+.menu-toggle {
+    display: none; /* Hide on larger screens */
+    flex-direction: column; /* Stack bars vertically */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: #fff; /* Color of the bars */
+    margin: 3px 0; /* Space between bars */
+}
+
+/* Responsive Styles for Hamburger Menu */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex; /* Show on mobile */
+    }
+}
+
+
 
 section {
     padding: 60px 20px;
