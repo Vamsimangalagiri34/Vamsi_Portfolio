@@ -1,101 +1,259 @@
-* {
+body { 
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
+    line-height: 1.4;
     background-color: #f4f4f4;
 }
 
-header {
-    background: #333;
+nav {
+    background: #333; 
     color: #fff;
-    padding: 1rem 0;
-    text-align: center;
+    padding: 10px 0;
     position: fixed;
     width: 100%;
-    top: 0;
     z-index: 1000;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
 }
 
 nav ul {
     list-style: none;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-weight: bold;
-}
-
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
 }
 
 section {
-    height: 100vh; /* Full-page height */
+    padding: 60px 20px;
+    min-height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    padding: 2rem;
-}
-
-#about, #projects, #skills, #contact, #home {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
+}
+
+#home {
+    display: flex;
     align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+    padding-top: 80px;
 }
 
-#about p, #projects p, #contact p, #home p {
-    font-size: 1.1rem;
+.about-me {
+    display: flex;
+    align-items: center;
+    max-width: 800px;
 }
 
-.project {
+.about-me img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for image */
+}
+
+.intro {
+    max-width: 500px;
+    color: #333; /* Dark text for readability */
+}
+
+.intro h1 {
+    font-size: 36px;
+    color: #2c3e50;
     margin-bottom: 20px;
 }
 
-.skills-list {
+.intro p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+
+
+#skills ul li:hover {
+    transform: translateY(-5px);
+}
+
+#projects {
+    background-color: #f4f4f4; /* Light background for clarity */
+    padding: 60px 20px;
+}
+
+#projects h2 {
+    color: #2c3e50; /* Professional dark color */
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#projects ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#projects ul li {
+    background: #ffffff; /* White background for contrast */
+    margin: 10px auto;
+    padding: 20px; /* Padding for readability */
+    border-radius: 10px;
+    border-left: 5px solid #f39c12; /* Orange border for emphasis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 700px;
+    text-align: left;
+}
+
+#projects ul li h3 {
+    color: #2980b9; /* Blue for project titles */
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#projects ul li p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* Skills Section */
+#skills {
+    background-color: #e9f7ef; /* Light green for a fresh look */
+    padding: 60px 20px;
+}
+
+#skills h2 {
+    color: #1abc9c; /* Teal heading color */
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#skills .skills-list ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
     list-style: none;
     padding: 0;
 }
 
-.skills-list li {
-    background: #333;
-    color: #fff;
-    display: inline-block;
+#skills .skills-list ul li {
+    background: #ffffff;
+    border: 2px solid #1abc9c;
     padding: 10px 20px;
     margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    color: #2c3e50;
+}
+
+/* Certifications Section */
+#certifications {
+    background-color: #fef9e7; /* Light yellow for certifications */
+    padding: 60px 20px;
+}
+
+#certifications h2 {
+    color: #f39c12; /* Orange heading color */
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#certifications ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#certifications ul li {
+    background: #ffffff;
+    border: 2px solid #f39c12;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 16px;
+    color: #2c3e50;
+}
+
+/* Home Page - About Section */
+/* Home Page - About Section */
+.about-me {
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-me img {
+    width: 75%; /* Image now takes 3/4 of the available container width */
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px; /* Adjusted margin for spacing */
+}
+
+.intro {
+    max-width: 500px; /* Adjusted intro text width */
+    font-size: 16px;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-me {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-me img {
+        width: 100%; /* Full width on mobile for better view */
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 15px; /* Space below image on mobile */
+    }
 }
 
 footer {
+    text-align: center;
     background: #333;
     color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-    margin-top: 20px;
+    padding: 15px 0;
 }
 
-.profile-pic {
-    max-width: 150px;
-    height: auto;
-    border-radius: 50%;
-    margin-bottom: 20px;
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #home {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-me {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-me img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    #skills ul, #projects ul, #certifications ul {
+        flex-direction: column;
+        align-items: center;
+    }
 }
