@@ -6,6 +6,43 @@ body {
     background-color: #f4f4f4;
 }
 
+.about-me {
+    display: flex;
+    align-items: center;
+    background: #fff; /* White background for contrast */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding around the content */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 20px 0; /* Margin for spacing */
+}
+
+.about-me img {
+    width: 150px; /* Adjust the image size */
+    height: auto;
+    border-radius: 50%; /* Circular image */
+    margin-right: 20px; /* Space between image and text */
+    border: 3px solid #2c3e50; /* Border color for the image */
+}
+
+.intro {
+    max-width: 600px; /* Limit width for text */
+    color: #34495e; /* Darker text color */
+}
+
+.intro h1 {
+    font-family: 'Arial', sans-serif; /* Change font family */
+    font-size: 2rem; /* Adjust font size */
+    color: #2c3e50; /* Darker heading color */
+    margin-bottom: 10px; /* Space below heading */
+}
+
+.intro p {
+    font-family: 'Verdana', sans-serif; /* Change font family for paragraph */
+    font-size: 1.1rem; /* Adjust font size for readability */
+    line-height: 1.5; /* Increase line height for better spacing */
+}
+
+
 nav {
     background: #333; 
     color: #fff;
@@ -80,9 +117,9 @@ section {
 
 
 
-#skills ul li:hover {
+/* #skills ul li:hover {
     transform: translateY(-5px);
-}
+} */
 
 #projects {
     background-color: #f4f4f4; /* Light background for clarity */
@@ -187,34 +224,43 @@ section {
     color: #2c3e50;
 }
 
-.achievements {
-    max-width: 800px;
-    margin: 50px auto;
-    text-align: center;
+#certifications ul li :hover {
+        transform: translateY(-5px);
+    }
+
+#achievements {
+    background: #ffffff; /* White background */
+    padding: 20px; /* Padding for spacing */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 20px 0; /* Margin for spacing */
 }
 
-.achievements h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    color: #2c3e50;
-    border-bottom: 2px solid #2c3e50;
-    padding-bottom: 10px;
+#achievements h2 {
+    color: #2c3e50; /* Darker heading color */
+    font-size: 24px; /* Increase font size */
+    margin-bottom: 15px; /* Space below heading */
+    text-align: center; /* Center align heading */
 }
 
-.achievements ul {
-    list-style: none;
-    padding: 0;
+#achievements ul {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0; /* Remove padding */
 }
 
-.achievements li {
-    font-size: 18px;
-    color: #2c3e50;
-    margin: 10px 0;
-    transition: transform 0.2s;
+#achievements ul li {
+    background: #f9f9f9; /* Light background for each list item */
+ /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding for items */
+    margin: 8px 0; /* Space between items */
+    display: flex; /* Flex for alignment */
+    align-items: center; /* Center vertically */
+    transition: background 0.3s; /* Smooth background transition */
 }
 
-.achievements li:hover {
-    transform: scale(1.05); /* Hover effect */
+#achievements ul li:hover {
+    background: #e0e0e0; /* Change background on hover */
 }
 
 
@@ -244,7 +290,7 @@ section {
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .about-me {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
 
@@ -324,5 +370,129 @@ footer {
     #skills ul, #projects ul, #certifications ul {
         flex-direction: column;
         align-items: center;
+    }
+}
+
+
+#contact {
+    background: #f4f4f4; /* Light background */
+    padding: 20px; /* Padding for spacing */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 20px 0; /* Margin for spacing */
+}
+
+.contact-container {
+    display: flex; /* Flex container */
+    justify-content: space-between; /* Space between left and right sections */
+    align-items: flex-start; /* Align items at the top */
+}
+
+.contact-details {
+    max-width: 400px; /* Limit width for contact details */
+    color: #34495e; /* Darker text color */
+}
+
+.contact-details h2 {
+    color: #2c3e50; /* Darker heading color */
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column; /* Stack social media items */
+    align-items: flex-end; /* Align to the right */
+}
+
+.social-media h2 {
+    color: #2c3e50; /* Darker heading color */
+    margin-bottom: 10px; /* Space below heading */
+}
+
+.icons {
+    display: flex;
+    gap: 15px; /* Space between icons */
+}
+
+.icons a {
+    color: #2c3e50; /* Icon color */
+}
+
+.download-button {
+    background: #2c3e50; /* Button background color */
+    color: white; /* Text color */
+    padding: 10px 15px; /* Button padding */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    margin-top: 10px; /* Space above button */
+    display: flex; /* Flex display for icon alignment */
+    align-items: center; /* Center align icon */
+}
+
+.download-button i {
+    margin-right: 5px; /* Space between icon and text */
+}
+
+.education {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #eaeef3; /* Light background color */
+}
+
+.education-tree {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    position: relative; /* For absolute positioning of branches */
+}
+
+.education-item {
+    background: #ffffff; /* White background for items */
+    border: 1px solid #dcdcdc; /* Light border */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 15px 0; /* Space between items */
+    padding: 20px; /* Inner padding */
+    width: 80%; /* Width of the items */
+    max-width: 600px; /* Max width */
+    transition: transform 0.3s; /* Animation effect */
+    position: relative; /* For positioning the branch line */
+    z-index: 1; /* Ensure items are above the branch line */
+}
+
+.education-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.branch {
+    width: 2px; /* Width of the branch line */
+    height: 20px; /* Height of the branch line */
+    background-color: #7f8c8d; /* Branch color */
+    position: relative;
+    z-index: 0; /* Below the education items */
+}
+
+.branch::before {
+    content: '';
+    width: 10px; /* Width of the branch base */
+    height: 10px; /* Height of the branch base */
+    background-color: #7f8c8d; /* Base color */
+    border-radius: 50%; /* Circular base */
+    position: absolute;
+    top: -5px; /* Position above the branch */
+    left: -4px; /* Center align with branch */
+}
+
+h3 {
+    color: #2c3e50; /* Dark color for headings */
+}
+
+p {
+    color: #555; /* Darker gray for text */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .education-item {
+        width: 90%; /* Wider items on smaller screens */
     }
 }
