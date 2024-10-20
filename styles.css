@@ -197,10 +197,10 @@ section {
 }
 
 .about-me img {
-    width: 75%; /* Image now takes 3/4 of the available container width */
+    width: 50%; /* Reduced size to 50% of the container's width */
     height: auto;
     border-radius: 10px;
-    margin-right: 20px; /* Adjusted margin for spacing */
+    margin-right: 20px; /* Maintain space between image and text */
 }
 
 .intro {
@@ -218,7 +218,7 @@ section {
     }
 
     .about-me img {
-        width: 100%; /* Full width on mobile for better view */
+        width: 80%; /* Slightly larger on mobile for better display */
         margin-right: 0; /* Remove right margin */
         margin-bottom: 15px; /* Space below image on mobile */
     }
